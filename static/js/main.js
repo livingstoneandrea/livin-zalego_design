@@ -318,7 +318,7 @@ btn.forEach(elem => {
 
 
             default:
-                $('.modal-content').css('width', '400px');
+                $('.modal-content').css('width', '90%');
                 $('.modal-body').html(`<p>We have no extra info of yet the content will be updated soon</p>\
 
                     <p>Working on it <i class="fas fa-smile-wink fa-2x" style="color:#fc8f00"></i> &nbsp;...</p>`);
@@ -337,7 +337,15 @@ var span = document.getElementsByClassName("close")[0];
 // <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    window.location.reload(true);
+
 }
+
+document.querySelector('#mob-navClose').addEventListener('click', (e) => {
+    e.preventDefault();
+    $('#mobile-nav').toggleClass('is-active');
+
+});
 
 //  outside click of the modal, close it
 window.onclick = function(event) {

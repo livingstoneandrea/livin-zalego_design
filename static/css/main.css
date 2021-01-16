@@ -1807,7 +1807,7 @@
  
  @media screen and (max-width: 760px) {
      .modal-content {
-         width: 80%;
+         width: 90%;
      }
  }
  
@@ -1917,6 +1917,22 @@
          flex: 0 0 100%;
          max-width: 100%;
      }
+     .services {
+         padding: 0;
+     }
+     .heading-section h2 span {
+         padding: 0 !important;
+     }
+     .home_banner-area {
+         min-height: 890px;
+     }
+     .grid-md {
+         flex-basis: auto;
+     }
+     .footer-widget {
+         text-align: center !important;
+         justify-content: center;
+     }
  }
  
  @media only screen and (max-width:960px) {
@@ -1932,7 +1948,8 @@
          padding: 0 0 0 30px;
      }
      .services .media-body {
-         padding-left: 3rem;
+         padding-left: 1rem !important;
+         padding-right: 1rem !important;
          text-align: left;
      }
      .order-lg-last {
