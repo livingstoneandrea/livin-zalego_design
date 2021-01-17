@@ -101,8 +101,8 @@
      flex-wrap: wrap;
      margin-left: auto;
      margin-right: auto;
-     padding-right: 15px;
-     padding-left: 15px;
+     /* padding-right: 15px;
+     padding-left: 15px; */
  }
  
  .grid-container {
@@ -1603,13 +1603,13 @@
  .close {
      color: #0e0e0e;
      float: right;
-     font-size: 32px;
+     font-size: 24px;
      font-weight: 400;
  }
  
  .close:hover,
  .close:focus {
-     color: rgb(156, 6, 6);
+     color: rgb(255, 15, 15);
      text-decoration: none;
      cursor: pointer;
  }
@@ -1631,8 +1631,13 @@
      /* color: white; */
  }
  
+ #mob-navClose:hover {
+     color: #000;
+ }
+ 
  #back-top {
      width: 40px;
+     height: 40px;
      line-height: 40px;
      overflow: hidden;
      z-index: 999;
@@ -1647,6 +1652,7 @@
      text-align: center;
      font-size: 30px;
      text-decoration: none;
+     border-radius: 50%;
  }
  
  #back-top:hover {
@@ -1763,8 +1769,9 @@
  .tabs a {
      align-items: center;
      justify-content: center;
-     margin-bottom: -1px;
-     padding: .5em 1em;
+     /* margin-bottom: -1px; */
+     font-size: 14px;
+     padding: .5em 0.5em;
      color: #2c3e50;
  }
  

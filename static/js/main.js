@@ -337,7 +337,10 @@ var span = document.getElementsByClassName("close")[0];
 // <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    //clear modal data
+    // $('.modal-body').html(' ');
     window.location.reload(true);
+
 
 }
 
