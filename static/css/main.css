@@ -63,7 +63,7 @@
  }
  
  .service_item {
-     padding: 60px 30px;
+     padding: 20px 10px;
      text-align: center;
      background: #fff;
      border: 1px solid #eee;
@@ -1898,8 +1898,8 @@
      width: 100% !important;
  }
  
- .portfolio-slider .owl-nav .owl-prev,
- .portfolio-slider .owl-nav .owl-next {
+ .owl-carousel .owl-nav button.owl-prev,
+ .owl-carousel .owl-nav button.owl-next {
      position: relative;
      display: inline-block;
      padding: 20px !important;
