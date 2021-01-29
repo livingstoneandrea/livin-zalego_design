@@ -1184,8 +1184,8 @@
      z-index: 0;
      width: 98px;
      height: 98px;
-     background: #faf0f0;
-     color: #a70000;
+     background: #abeaff;
+     color: #f8faff;
      border-radius: 50%;
      margin: auto;
      transition: .3s;
@@ -1207,7 +1207,7 @@
  .services .icon span,
  .app__tile .icon span {
      font-size: 45px;
-     color: #a70000;
+     color: #f8faff;
  }
  
  .media-body {
