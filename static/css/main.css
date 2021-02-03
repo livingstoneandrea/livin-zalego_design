@@ -460,13 +460,6 @@
      transition: all .3s ease 0s;
      color: #e40050;
  }
- /* img {
-     max-width: 100%;
-     width: 100%;
-     height: auto;
-     border: none;
-     display: block;
- } */
  
  h1,
  h2,
@@ -1175,6 +1168,7 @@
  .app__tile {
      box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
      text-align: center;
+     height: 360px;
  }
  
  .services .icon,
@@ -1190,19 +1184,7 @@
      margin: auto;
      transition: .3s;
  }
- /* .order-lg-last {
-     -webkit-box-ordinal-group: 14;
-     -ms-flex-order: 13;
-     order: 13;
- }
  
- .text-lg-right {
-     text-align: right !important;
- }
- 
- .text-lg-left {
-     text-align: left !important;
- } */
  
  .services .icon span,
  .app__tile .icon span {
@@ -1422,9 +1404,7 @@
  .modal {
      display: none;
      position: fixed;
-     /* Stay in place */
      z-index: 999;
-     /* Sit on top */
      padding-top: 62px;
      /* Location of the box */
      left: 0;
@@ -1432,17 +1412,15 @@
      width: 100%;
      /* Full width */
      height: 100%;
-     /*
-        Full height */
      overflow: auto;
-     /* Enable scroll if needed */
      background-color: rgb(0, 0, 0);
-     /* Fallback color */
      background-color: rgba(0, 0, 0, 0.4);
-     /* Black w/ opacity */
+    
  }
  /* Modal Content */
- 
+.modal::-webkit-scrollbar{
+    display: none;
+}
  .modal-content {
      position: relative;
      background-color: #fefefe;
@@ -1635,6 +1613,7 @@
      overflow-x: auto;
      white-space: nowrap;
      user-select: none;
+     
  }
  
  .tabs ul {
@@ -1660,7 +1639,7 @@
  .tabs ul li.is-active {
      color: #05364d;
      font-weight: 800;
-     background: #e8e8e8;
+     /* background: #e8e8e8; */
      border-radius: 20px;
  }
  
@@ -1726,6 +1705,7 @@
      background: url('../img/bg_contact.svg') no-repeat center;
      background-attachment: fixed;
      background-size: 80%;
+     color: #000;
 
  }
  
@@ -1854,7 +1834,11 @@
      }
  }
  
- @media only screen and (max-width:670px) {}
+ @media only screen and (max-width:670px) {
+      #conducts{
+         background-size: cover !important;
+     }
+ }
  
  @media only screen and (max-width:548px) {
      .top-section .wrapper section#mob-comm {
@@ -1880,6 +1864,7 @@
          text-align: center !important;
          justify-content: center;
      }
+    
  }
  
  @media only screen and (max-width:960px) {

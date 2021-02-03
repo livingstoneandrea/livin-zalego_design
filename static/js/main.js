@@ -126,7 +126,7 @@
             }
         });
     }
-    const btn = document.querySelectorAll('a.primary_btn2')
+    const btn = document.querySelectorAll('.short_info>h4>a')
     var modal = document.getElementById('toast-modal');
     btn.forEach(elem => {
         elem.addEventListener('click', (e) => {
@@ -135,6 +135,7 @@
             console.log(`data extras ${e.currentTarget.getAttribute('data-extras')}`);
             switch (data_extras) {
                 case 'sokoni':
+                    $('.modal-content').css('width', '90%');
                     $('.modal-header h2').html(`Sokoni`);
                     var extra_info = `<div>\
                                         <p></p>\
@@ -171,6 +172,7 @@
 
                     break;
                 case 'cli_ms':
+                    $('.modal-content').css('width', '90%');
                     $('.modal-header h2').html(`Client Management System`);
 
                     var extra_info = `
@@ -192,6 +194,7 @@
                     break;
 
                 case 'pettyCash_ms':
+                    $('.modal-content').css('width', '90%');
                     $('.modal-header h2').html(`Petty Cash Management`);
 
                     var extra_info = `
@@ -220,6 +223,7 @@
                     break;
 
                 case 'sms_ms':
+                    $('.modal-content').css('width', '90%');
 
                     $('.modal-header h2').html(`SMS Solutions`);
                     const data = `<p>Whether passing a message to customers or marketing to potential clients, our bulk messaging service can reach out to millions worldwide using our powerful and easy to use messaging platform that has limitless options. No programming skills are required and it accommodates any organization size whether a personal business or a large corporate. Some of its features include:-</p>`;
@@ -250,6 +254,7 @@
                     break;
 
                 case 'e-learn_sys':
+                    $('.modal-content').css('width', '90%');
                     $('.modal-header h2').html(`Zalego E-Learning`);
 
                     var extra_info = `
@@ -271,6 +276,7 @@
                     break;
 
                 case 'credit_scoring':
+                    $('.modal-content').css('width', '90%');
                     $('.modal-header h2').html(`Pronto (Credit Scoring)`);
 
                     var extra_info = `
@@ -297,6 +303,7 @@
 
                     break;
                 case 'rsc_locator':
+                    $('.modal-content').css('width', '90%');
                     $('.modal-header h2').html(`Resource Locator`);
                     var extra_info = `
                                        
@@ -322,6 +329,8 @@
 
                     break;
                 case 'h-man_rsc':
+                    $('.modal-content').css('width', '90%');
+
                     $('.modal-header h2').html(`Human Resource management`);
 
                     var extra_info = `
@@ -342,7 +351,7 @@
 
 
                 default:
-                    $('.modal-content').css('width', '90%');
+                    $('.modal-content').css('width', '60%');
                     $('.modal-body').html(`<p>We have no extra info of yet the content will be updated soon</p>\
 
                     <p>Working on it <i class="fas fa-smile-wink fa-2x" style="color:#fc8f00"></i> &nbsp;...</p>`);
@@ -387,19 +396,19 @@
         margin: 20,
         nav: true,
         navText: ['<span class="fas fa-arrow-left">', '<span class="fas fa-arrow-right">'],
-        // responsive:{
-        // 600:{
-        // 	margin: 20,
-        //   items: 2
-        // },
-        // 1000:{
-        // 	margin: 20,
-        //   items: 2
-        // },
-        // 1200:{
-        // 	margin: 20,
-        //   items: 3
-        // }
-        // }
+        responsive:{
+        600:{
+        	margin: 20,
+          items: 1
+        },
+        1000:{
+        	margin: 20,
+          items: 1
+        },
+        1200:{
+        	margin: 20,
+          items: 1
+        }
+        }
     });
 })(jQuery);
